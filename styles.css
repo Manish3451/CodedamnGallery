@@ -1,0 +1,62 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+img{
+    height: 10%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.Multiverse{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.class{
+    position: relative;
+}
+
+.image-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+
+
+  @media screen and (max-width: 480px) {
+    .Multiverse{
+        display:flex;
+        flex-direction:column;
+    }
+    .Multiverse img{
+        width:400px;
+    } 
+  }
+
+
+   @media screen and (max-width: 1000px) {
+    .Multiverse{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .Multiverse img{
+        width: 100%;
+    }
+    
+  } 
